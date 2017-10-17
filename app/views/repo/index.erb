@@ -1,0 +1,9 @@
+<h1>Your Repos</h1>
+<% @repos.each do |repo| %>
+<ul>
+  <li><%= link_to repo.name, repo.url %></li>
+  <ul>
+    <li><%=  %></li>
+  </ul>
+</ul>
+<% end %>

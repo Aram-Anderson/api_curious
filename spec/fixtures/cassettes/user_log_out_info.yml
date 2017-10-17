@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/users/Aram-Anderson/repos?access_token=728f4145480aa5025cf27e04bfc640c9666360fd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.cloak-preview
+      Authentication:
+      - token TOKEN
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 13 Oct 2017 16:02:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '83'
+      Status:
+      - 401 Unauthorized
+      X-Github-Media-Type:
+      - github.cloak-preview
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '56'
+      X-Ratelimit-Reset:
+      - '1507913868'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.013194'
+      X-Github-Request-Id:
+      - E17D:38F3:6028B1:B5F859:59E0E379
+    body:
+      encoding: UTF-8
+      string: '{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}'
+    http_version: 
+  recorded_at: Fri, 13 Oct 2017 16:02:04 GMT
+recorded_with: VCR 3.0.3
